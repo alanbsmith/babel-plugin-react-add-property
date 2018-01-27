@@ -10,8 +10,9 @@ designated attribute for end-to-end integration tests (without having to add the
 
 ```jsx
   <div class="Page-jLerck lhFHrB">
-    <div class="Header-dJBcYZ dqmObD">
+    <div class="Header-dJBcYZ dqmObD">...</div>
     <div class="Body-MnRsT gzvZiS">
+      ...
     </div>
   </div>
 ```
@@ -20,8 +21,9 @@ designated attribute for end-to-end integration tests (without having to add the
 
 ```jsx
   <div class="Page-jLerck lhFHrB" data-test="Page">
-    <div class="Header-dJBcYZ dqmObD" data-test="Header">
+    <div class="Header-dJBcYZ dqmObD" data-test="Header">...</div>
     <div class="Body-MnRsT gzvZiS" data-test="Body">
+      ...
     </div>
   </div>
 ```
@@ -130,7 +132,3 @@ the Code of Conduct in the [Contributing Guidelines][coc].
 
 [coc]: https://github.com/alanbsmith/babel-plugin-react-add-property/blob/master/.github/CONTRIBUTING.md
 [license]: https://github.com/alanbsmith/babel-plugin-react-add-property/blob/master/LICENSE
-
-```
-
-```
