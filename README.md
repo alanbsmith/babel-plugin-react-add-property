@@ -9,23 +9,23 @@ designated attribute for end-to-end integration tests (without having to add the
 ### Before
 
 ```jsx
-  <div class="Page-jLerck lhFHrB">
-    <div class="Header-dJBcYZ dqmObD">...</div>
-    <div class="Body-MnRsT gzvZiS">
-      ...
-    </div>
-  </div>
+<div class="Page-jLerck lhFHrB">
+  <div class="Header-dJBcYZ dqmObD">...</div>
+  <div class="Body-MnRsT gzvZiS">...</div>
+</div>
 ```
 
 ### After
 
 ```jsx
-  <div class="Page-jLerck lhFHrB" data-test="Page">
-    <div class="Header-dJBcYZ dqmObD" data-test="Header">...</div>
-    <div class="Body-MnRsT gzvZiS" data-test="Body">
-      ...
-    </div>
+<div class="Page-jLerck lhFHrB" data-test="Page">
+  <div class="Header-dJBcYZ dqmObD" data-test="Header">
+    ...
   </div>
+  <div class="Body-MnRsT gzvZiS" data-test="Body">
+    ...
+  </div>
+</div>
 ```
 
 ## Installation
@@ -85,6 +85,20 @@ However, if you'd like to have a custom attribute name, you can pass it in with 
 }
 ```
 
+This custom config would transform this div:
+
+```jsx
+<div class="Header-dJBcYZ dqmObD">...</div>
+```
+
+to look like this:
+
+```jsx
+<div class="Header-dJBcYZ dqmObD" data-qa="Header">
+  ...
+</div>
+```
+
 #### Via CLI
 
 ```sh
@@ -107,18 +121,6 @@ with options:
 require('babel-core').transform('code', {
   plugins: [['react-add-property', { property: 'data-qa' }]],
 });
-```
-
-This custom config would transform this div:
-
-```jsx
-<div class="Header-dJBcYZ dqmObD" />
-```
-
-to look like this:
-
-```jsx
-<div class="Header-dJBcYZ dqmObD" data-qa="Header" />
 ```
 
 ## Contributing
