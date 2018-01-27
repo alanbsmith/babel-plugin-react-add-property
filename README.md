@@ -6,39 +6,30 @@ This is a small Babel plugin for adding data attributes to React JSX elements. I
 to add meaningful identifiers for styled components. This allows our components to have a
 designated attribute for end-to-end integration tests (without having to add them manually).
 
-<table>
-  <thead>
-    <th>BEFORE</th>
-    <th>AFTER</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <pre>
-          &lt;div class="Page-jLerck lhFHrB"&gt;
-            &lt;div class="Header-dJBcYZ dqmObD"&gt;
-            &lt;div class="Body-MnRsT gzvZiS"&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        </pre>
-      </td>
-      <td>
-        <pre>
-          &lt;div class="Page-jLerck lhFHrB" data-test="Page"&gt;
-            &lt;div class="Header-dJBcYZ dqmObD" data-test="Header"&gt;
-            &lt;div class="Body-MnRsT gzvZiS" data-test="Body"&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        </pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Before
 
-## ~~Installation~~ (WIP)
+```jsx
+  <div class="Page-jLerck lhFHrB">
+    <div class="Header-dJBcYZ dqmObD">
+    <div class="Body-MnRsT gzvZiS">
+    </div>
+  </div>
+```
 
-This package is available on npm as babel-plugin-react-add-property, and you can find it
-[here]().
+### After
+
+```jsx
+  <div class="Page-jLerck lhFHrB" data-test="Page">
+    <div class="Header-dJBcYZ dqmObD" data-test="Header">
+    <div class="Body-MnRsT gzvZiS" data-test="Body">
+    </div>
+  </div>
+```
+
+## Installation
+
+This package is available on npm as `babel-plugin-react-add-property`, and you can find it
+[here](https://www.npmjs.com/package/babel-plugin-react-add-property).
 
 To install the latest stable version with Yarn:
 
@@ -139,3 +130,7 @@ the Code of Conduct in the [Contributing Guidelines][coc].
 
 [coc]: https://github.com/alanbsmith/babel-plugin-react-add-property/blob/master/.github/CONTRIBUTING.md
 [license]: https://github.com/alanbsmith/babel-plugin-react-add-property/blob/master/LICENSE
+
+```
+
+```
