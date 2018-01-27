@@ -1,0 +1,55 @@
+{
+  "name": "babel-plugin-react-add-properties",
+  "version": "0.1.0",
+  "description": "a Babel plugin for adding data attrs to React components",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-react": "^7.6.0",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "build:watch": "babel src -w -d lib",
+    "lint": "eslint src __tests__",
+    "precommit": "lint-staged && yarn lint",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier --write src/**/*.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanbsmith/babel-plugin-react-add-properties.git"
+  },
+  "author": "Alan B Smith <a.bax.smith@gmail.com> (https://github.com/alanbsmith)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanbsmith/babel-plugin-react-add-properties/issues"
+  },
+  "homepage": "https://github.com/alanbsmith/babel-plugin-react-add-properties#readme",
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
