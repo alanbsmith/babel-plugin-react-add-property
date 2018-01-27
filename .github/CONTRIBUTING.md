@@ -6,12 +6,12 @@ with the project.
 
 ## Pull Request Process
 
-* Create a fork of this repository, then clone the fork to your local development environment: `git clone https://github.com/YOUR_USERNAME/babel-plugin-react-add-properties.git`
+* Create a fork of this repository, then clone the fork to your local development environment: `git clone https://github.com/YOUR_USERNAME/babel-plugin-react-add-property.git`
 * Create a branch with a meaningful name reflecting the bug fix or new feature: `git checkout -b my-new-feature`
 * Make your changes (including updates/additions to tests) and commit: `git add` and `git commit`
 * Make sure that the tests still pass: `npm run review`
 * Push your branch: `git push -u origin my-new-feature`
-* [Submit a pull request][pr] to the upstream `babel-plugin-react-add-properties` repository.
+* [Submit a pull request][pr] to the upstream `babel-plugin-react-add-property` repository.
 * Enter a descriptive title for the pull request and fill in the PR template, describing the proposed changes.
 * Wait for a maintainer to review your PR. Follow up on any comments from the reviewer, and wait for a maintainer to merge the PR.
 
@@ -87,6 +87,6 @@ members of the project's leadership.
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available at [http://contributor-covenant.org/version/1/4][version]
 
-[pr]: https://github.com/alanbsmith/babel-plugin-react-add-properties/compare
+[pr]: https://github.com/alanbsmith/babel-plugin-react-add-property/compare
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
