@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-react-add-properties",
+  "name": "babel-plugin-react-add-property",
   "version": "0.1.0",
   "description": "a Babel plugin for adding data attrs to React components",
   "main": "lib/index.js",
@@ -34,22 +34,20 @@
     "precommit": "lint-staged && yarn lint",
     "prepublishOnly": "npm run build",
     "prettier": "prettier --write src/**/*.js",
+    "review": "npm run lint && npm test",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanbsmith/babel-plugin-react-add-properties.git"
+    "url": "git+https://github.com/alanbsmith/babel-plugin-react-add-property.git"
   },
   "author": "Alan B Smith <a.bax.smith@gmail.com> (https://github.com/alanbsmith)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alanbsmith/babel-plugin-react-add-properties/issues"
+    "url": "https://github.com/alanbsmith/babel-plugin-react-add-property/issues"
   },
-  "homepage": "https://github.com/alanbsmith/babel-plugin-react-add-properties#readme",
+  "homepage": "https://github.com/alanbsmith/babel-plugin-react-add-property#readme",
   "lint-staged": {
-    "*.{js,json,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{js,json,md}": ["prettier --write", "git add"]
   }
 }
