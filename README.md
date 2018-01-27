@@ -116,6 +116,18 @@ require('babel-core').transform('code', {
 });
 ```
 
+This custom config would transform this div:
+
+```jsx
+<div class="Header-dJBcYZ dqmObD" />
+```
+
+to look like this:
+
+```jsx
+<div class="Header-dJBcYZ dqmObD" data-qa="Header" />
+```
+
 ## Contributing
 
 I am thankful for any contributions made by the community. By contributing you agree to abide by
