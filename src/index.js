@@ -8,8 +8,8 @@ export default function({ types: t }) {
           JSXElement(path2) {
             let nodeName = '';
             path2.traverse({
-              JSXIdentifier() {
-                nodeName = path2.node.name;
+              JSXIdentifier(path3) {
+                nodeName = path3.node.name;
               },
             });
 
